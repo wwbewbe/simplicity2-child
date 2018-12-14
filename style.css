@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/*!
+Theme Name: Simplicity2 child
+Template:   simplicity2
+Version:    20161002
+*/
+
+/* Simplicity子テーマ用のスタイルを書く */
+/* タグクラウド */
+.tagcloud a {
+	display: inline-block;
+	color: #7eb4d7;
+	text-decoration: none;
+  border: 1px solid; /* リンクの周りに線を */
+  border-radius: 4px;
+  font-size: 14px !important;
+  padding: 0 2px;
+  border: 1px solid;
+}
+
+/* h2 */
+.entry-content h2 {
+    border-left: 10px solid #7eb4d7;
+    margin: 40px -29px 20px;
+    padding: 25px 30px;
+    font-size: 26px;
+    background-color: #e4edf4;
+}
+/* h3 */
+.entry-content h3 {
+    font-size: 23px;
+    border-bottom: 5px solid #7eb4d7;
+    padding: 10px 0;
+}
