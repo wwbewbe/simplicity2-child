@@ -33,3 +33,59 @@ Version:    20161002
     border-bottom: 5px solid #7eb4d7;
     padding: 10px 0;
 }
+
+/*クイズ用隠しボックス*/
+.hidden_box {
+    margin: 2em 0;
+    padding: 0;
+}
+
+/*ボタン装飾*/
+.hidden_box label {
+    padding: 15px;
+    font-weight: bold;
+    border: solid 2px black;
+    border-radius:10px;
+    cursor :pointer;
+}
+
+/*アイコンを表示*/
+.hidden_box label:before {
+    display: inline-block;
+    content: '\f067';
+    font-family: 'FontAwesome';
+    padding-right: 5px;
+    transition: 0.2s;
+}
+
+/*ボタンホバー時*/
+.hidden_box label:hover {
+    background: #efefef;
+}
+
+/*アイコンを切り替え*/
+.hidden_box input:checked ~ label:before {
+     content: '\f068';
+		 font-family: 'FontAwesome';
+}
+
+/*チェックは見えなくする*/
+.hidden_box input {
+    display: none;
+}
+
+/*中身を非表示にしておく*/
+.hidden_box .hidden_item {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+/*クリックで中身表示*/
+.hidden_box input:checked ~ .hidden_item {
+    padding: 10px 0;
+    height: auto;
+    opacity: 1;
+}
